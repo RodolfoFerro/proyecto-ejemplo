@@ -31,12 +31,12 @@ def plotly_figure_3d(dataframe):
             x='EDAD',
             y='SALARIO',
             z='LABEL_ENCODING',
-            color='COMPRA',
-            symbol='COMPRA'
+            symbol='COMPRA',
+            color='COMPRA'
         )
     
-    fig.update_traces(
-        marker_coloraxis=None
-    )
+    # fig.update_traces(
+    #     marker_coloraxis=None
+    # )
     
     return fig

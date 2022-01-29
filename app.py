@@ -233,7 +233,7 @@ st.markdown(
 
     ```python
     dep_label_encoder = LabelEncoder()
-    data['COMPRA'] = dep_label_encoder.fit_transform(data.iloc[:, 3])
+    data['COMPRA'] = dep_label_encoder.fit_transform(data.iloc[:, -1])
     ```
 
     Esto cambiará los valores de la columna `COMPRA` de `Yes`/`No` a 
@@ -241,7 +241,7 @@ st.markdown(
     """
 )
 dep_label_encoder = LabelEncoder()
-data['COMPRA'] = dep_label_encoder.fit_transform(data.iloc[:, 3])
+data['COMPRA'] = dep_label_encoder.fit_transform(data.iloc[:, -1])
 st.dataframe(data)
 
 st.header("Escalamiento de datos")
