@@ -321,6 +321,6 @@ st.plotly_chart(fig)
 
 st.markdown(
     """
-    De aquí podemos ver que los datos son linealmente separables.
+    ¿De aquí podríamos ver si los datos son separables?
     """
 )
